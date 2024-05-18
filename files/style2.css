@@ -1,0 +1,305 @@
+@chrset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Hiragino Sans", "Yu Gothic", "YuGothic", sans-serif;
+  line-height: 1.7;
+  color: 555;
+  background-size: auto, auto;
+  margin: 0px;
+  padding: 0px;
+
+}
+a {
+  text-decoration: none;
+}
+.br-sp {
+  display: none;
+}
+.logo {
+  display: flex;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: auto;
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+.page-header {
+	display: flex;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  max-width: 500px;
+  margin-top: 120px;
+  margin-right: 20px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 40px;
+  margin-right: 0px;
+  font-family: "Recursive";
+  font-weight: 600;
+}
+.main-nav a{
+  color: #555;
+}
+.plugin-type {
+  text-align: left;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: -20px;
+  font-family: "Recursive", "Murecho", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+  font-weight: 600;
+}
+.plugin-title {
+  text-align: left;
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
+  font-family: "Recursive", "Murecho", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+  font-weight: 500;
+}
+.plugin-lead {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: center;
+	margin-top: -40px;
+	max-width: 1050px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.plugin-lead ul{
+	font-size: 0.8rem;
+	font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+	color: #38609c;
+	margin: 30px 0px 30px -5px;
+}
+.ul-gray{
+	color: #666666;
+}
+.lead-text {
+	text-align: left;
+	font-size: 1.2rem;
+	letter-spacing: 0.15rem;
+	font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+	font-weight: 200;
+	width: 400px;
+	margin: 60px auto 0px auto;
+}
+.image1 img{
+	width: 480px;
+	margin: 60px 30px 30px 30px;
+}
+.home-content p{
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+  font-weight: 200;
+  margin: 0px auto 60px auto;
+}
+.table-button{
+  letter-spacing: 0.15rem;
+  background: #fff;
+  color: #000;
+  font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+  font-weight: 300;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+}
+.table-button:hover{
+  background: #666;
+  color: #fff;
+}
+.dl-button{
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+  background: #fff;
+  color: #000;
+  font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+  font-weight: 300;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 15px 60px 15px 60px;
+}
+.dl-button:hover{
+  font-size: 1.3rem;
+  background: #666;
+  color: #fff;
+}
+.dl-button:before{
+	padding: 0px 1rem 0 0;
+	display: inline-block;
+	width: 2rem;
+	content:url("/web/20240512122336im_/https://mirakiki.work/DL.svg");
+}
+.gallery img{
+	width: 400px;
+	margin: 30px 30px 10px 30px;
+}
+.page-footer {
+	display: flex;
+	margin-top: 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.plugin-table {
+	width: 100%;
+	border-collapse:separate;
+	border-spacing: 20px;
+}
+.plugin-table tr{
+	width: 100%;
+	margin-top: 5px;
+}
+.plugin-table-name{
+	text-align: left;
+	padding: 5px 20px 5px 20px;
+	border-left: solid 5px #5fa6b9;
+}
+.plugin-table-right{
+	width: 80px;
+	text-align: left;
+	padding: 5px 20px 5px 20px;
+}
+.link-table {
+	width: 100%;
+	font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+	font-weight: 600;
+	color: #666666;
+	text-align: left;
+	border-collapse:separate;
+	border-spacing: 0px;
+	margin-top: 10px;
+}
+.link-table a{
+	color: #666666;
+}
+.link-name{
+	text-align: left;
+	width: 15px;
+	height: 10px;
+}
+.link-right{
+	text-align: left;
+	width: 120px;
+}
+.back{
+	width: 1100px;
+}
+.back a{
+	width: 100%;
+	margin-left: 50px;
+	margin-top: 30px;
+	font-family: "Recursive";
+	font-weight: 300;
+	color: #555555;
+}
+.back a:before{
+	padding: 0px 0.5rem 0 0;
+	display: inline-block;
+	width: 2rem;
+	content:url("/web/20240512122336im_/https://mirakiki.work/back.svg");
+}
+.copyright{
+	width: 100%;
+	font-size: 0.5rem;
+	letter-spacing: 0.15rem;
+	text-align: center;
+	color: #555555;
+	font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+	font-weight: 300;
+	margin: 30px auto 30px auto;
+}
+@media screen and (max-width : 1080px ){
+  .br-sp {
+    display: inline-block;
+  }
+  .last-update {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+  }
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  .main-nav{
+    margin-top: 30px;
+  }
+  .main-nav li{
+    margin-top: 10px;
+  }
+	.plugin-type {
+		font-size: 1.0rem;
+	}
+	.plugin-title {
+		font-size: 1.8rem;
+}
+	.lead-text {
+		text-align: left;
+		font-size: 1.2rem;
+		letter-spacing: 0.15rem;
+		font-family: "Recursive", "Hiragino Sans", "Yu Gothic", "YuGothic",sans-serif;
+		font-weight: 200;
+		width: 90%;
+		max-width: 500px;
+		margin: 20px auto 0px auto;
+	}
+	.image1 img{
+		width: 100%;
+		max-width: 500px;
+		margin: 40px 0px 10px 0px;
+	}
+	.gallery img{
+		width: 80%;
+		max-width: 500px;
+		margin: 20px 0px 10px 0px;
+	}
+  .button{
+    padding: 0px auto 0px auto;
+  }
+  .page-footer {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+	.back a{
+		margin-left: 5%;
+	}
+}
+
+/*
+     FILE ARCHIVED ON 12:23:36 May 12, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:33:17 May 14, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.696
+  exclusion.robots: 0.082
+  exclusion.robots.policy: 0.07
+  esindex: 0.009
+  cdx.remote: 74.695
+  LoadShardBlock: 66.854 (3)
+  PetaboxLoader3.datanode: 70.379 (4)
+  load_resource: 120.114
+  PetaboxLoader3.resolve: 88.066
+*/

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja" style="scroll-behavior: unset;">
+<head>
+	<!--
+    <script src="files/analytics.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            var v = archive_analytics.values;
+            v.service = 'wb';
+            v.server_name = 'wwwb-app225.us.archive.org';
+            v.server_ms = 219;
+            archive_analytics.send_pageview({});
+        });
+    </script>
+	-->
+    <script type="text/javascript" src="files/bundle-playback.js" charset="utf-8"></script>
+    <script type="text/javascript" src="files/wombat.js" charset="utf-8"></script>
+	<!--
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            "autoplay": "on",
+            "unmuteOverlay": "hidden"
+        };
+    </script>
+	-->
+    <script type="text/javascript" src="files/ruffle.js"></script>
+	<!--
+    <script type="text/javascript">
+        __wm.init("https://web.archive.org/web");
+        __wm.wombat("https://mirakiki.work/chimei.html", "20240512122336", "https://web.archive.org/", "web", "https://web-static.archive.org/_static/",
+            "1715516616");
+    </script>
+	-->
+    <link rel="stylesheet" type="text/css" href="files/banner-styles.css">
+    <link rel="stylesheet" type="text/css" href="files/iconochive.css">
+    <!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Mirakiki.work">
+    <meta name="viewport" content="width=device-width, initial-dcale=1">
+    <title>地名板ジェネレーター</title>
+	<!--
+    <link rel="preconnect" href="https://web.archive.org/web/20240512122336/https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://web.archive.org/web/20240512122336/https://fonts.gstatic.com/" crossorigin="">
+	-->
+    <link href="files/css2.css" rel="stylesheet">
+    <link href="files/css2_002.css" rel="stylesheet">
+    <link href="files/css.css" rel="stylesheet">
+    <link href="files/css_002.css" rel="stylesheet">
+    <link href="files/style2.css" rel="stylesheet">
+    <script>
+        function writeFile() {
+            try {
+                const canvas2 = document.querySelector("canvas");
+                const a = document.createElement("a");
+                a.href = canvas2.toDataURL();
+                a.download = "地名板.png";
+                a.click();
+            } catch (e) {
+                console.log(e.stack);
+                alert("エラー:" + e);
+            }
+        }
+
+        function getValue() {
+            for (let i = 0; i < 2; i++) {
+                (function(i) {
+                    setTimeout(function() {
+                        console.log(`${i+1} 回目実行`);
+                        var canvas = document.getElementById("canvas");
+                        var result_place_jp_top = document.getElementById('place_jp_top').value;
+                        var result_place_en_top = document.getElementById('place_en_top').value;
+                        var ctx
+                        ctx = canvas.getContext("2d");
+                        ctx.clearRect(0, 0, 92, 228);
+                        ctx.fillStyle = "#ffffff";
+                        ctx.textAlign = "center";
+                        ctx.lineWidth = 0;
+                        ctx.beginPath();
+                        ctx.moveTo(0, 0);
+                        ctx.lineTo(0, 0);
+                        ctx.lineTo(0, 92);
+                        ctx.lineTo(228, 92);
+                        ctx.lineTo(228, 0);
+                        ctx.fill();
+
+                        ctx.fillStyle = "#f9f9f9";
+                        ctx.lineWidth = 0;
+                        ctx.beginPath();
+                        ctx.moveTo(2, 0);
+                        ctx.lineTo(2, 0);
+                        ctx.lineTo(2, 92);
+                        ctx.lineTo(4, 92);
+                        ctx.lineTo(4, 0);
+                        ctx.lineTo(6, 0);
+                        ctx.lineTo(6, 92);
+                        ctx.lineTo(8, 92);
+                        ctx.lineTo(8, 0);
+                        ctx.lineTo(10, 0);
+                        ctx.lineTo(10, 92);
+                        ctx.lineTo(12, 92);
+                        ctx.lineTo(12, 0);
+                        ctx.lineTo(14, 0);
+                        ctx.lineTo(14, 92);
+                        ctx.lineTo(16, 92);
+                        ctx.lineTo(16, 0);
+                        ctx.lineTo(18, 0);
+                        ctx.lineTo(18, 92);
+                        ctx.lineTo(20, 92);
+                        ctx.lineTo(20, 0);
+                        ctx.lineTo(22, 0);
+                        ctx.lineTo(22, 92);
+                        ctx.lineTo(24, 92);
+                        ctx.lineTo(24, 0);
+                        ctx.lineTo(26, 0);
+                        ctx.lineTo(26, 92);
+                        ctx.lineTo(28, 92);
+                        ctx.lineTo(28, 0);
+                        ctx.lineTo(30, 0);
+                        ctx.lineTo(30, 92);
+                        ctx.lineTo(32, 92);
+                        ctx.lineTo(32, 0);
+                        ctx.lineTo(34, 0);
+                        ctx.lineTo(34, 92);
+                        ctx.lineTo(36, 92);
+                        ctx.lineTo(36, 0);
+                        ctx.lineTo(38, 0);
+                        ctx.lineTo(38, 92);
+                        ctx.lineTo(40, 92);
+                        ctx.lineTo(40, 0);
+                        ctx.lineTo(42, 0);
+                        ctx.lineTo(42, 92);
+                        ctx.lineTo(44, 92);
+                        ctx.lineTo(44, 0);
+                        ctx.lineTo(46, 0);
+                        ctx.lineTo(46, 92);
+                        ctx.lineTo(48, 92);
+                        ctx.lineTo(48, 0);
+                        ctx.lineTo(50, 0);
+                        ctx.lineTo(50, 92);
+                        ctx.lineTo(52, 92);
+                        ctx.lineTo(52, 0);
+                        ctx.lineTo(54, 0);
+                        ctx.lineTo(54, 92);
+                        ctx.lineTo(56, 92);
+                        ctx.lineTo(56, 0);
+                        ctx.lineTo(58, 0);
+                        ctx.lineTo(58, 92);
+                        ctx.lineTo(60, 92);
+                        ctx.lineTo(60, 0);
+                        ctx.lineTo(62, 0);
+                        ctx.lineTo(62, 92);
+                        ctx.lineTo(64, 92);
+                        ctx.lineTo(64, 0);
+                        ctx.lineTo(66, 0);
+                        ctx.lineTo(66, 92);
+                        ctx.lineTo(68, 92);
+                        ctx.lineTo(68, 0);
+                        ctx.lineTo(70, 0);
+                        ctx.lineTo(70, 92);
+                        ctx.lineTo(72, 92);
+                        ctx.lineTo(72, 0);
+                        ctx.lineTo(74, 0);
+                        ctx.lineTo(74, 92);
+                        ctx.lineTo(76, 92);
+                        ctx.lineTo(76, 0);
+                        ctx.lineTo(78, 0);
+                        ctx.lineTo(78, 92);
+                        ctx.lineTo(80, 92);
+                        ctx.lineTo(80, 0);
+                        ctx.lineTo(82, 0);
+                        ctx.lineTo(82, 92);
+                        ctx.lineTo(84, 92);
+                        ctx.lineTo(84, 0);
+                        ctx.lineTo(86, 0);
+                        ctx.lineTo(86, 92);
+                        ctx.lineTo(88, 92);
+                        ctx.lineTo(88, 0);
+                        ctx.lineTo(90, 0);
+                        ctx.lineTo(90, 92);
+                        ctx.lineTo(92, 92);
+                        ctx.lineTo(92, 0);
+                        ctx.lineTo(94, 0);
+                        ctx.lineTo(94, 92);
+                        ctx.lineTo(96, 92);
+                        ctx.lineTo(96, 0);
+                        ctx.lineTo(98, 0);
+                        ctx.lineTo(98, 92);
+                        ctx.lineTo(100, 92);
+                        ctx.lineTo(100, 0);
+                        ctx.lineTo(102, 0);
+                        ctx.lineTo(102, 92);
+                        ctx.lineTo(104, 92);
+                        ctx.lineTo(104, 0);
+                        ctx.lineTo(106, 0);
+                        ctx.lineTo(106, 92);
+                        ctx.lineTo(108, 92);
+                        ctx.lineTo(108, 0);
+                        ctx.lineTo(110, 0);
+                        ctx.lineTo(110, 92);
+                        ctx.lineTo(112, 92);
+                        ctx.lineTo(112, 0);
+                        ctx.lineTo(114, 0);
+                        ctx.lineTo(114, 92);
+                        ctx.lineTo(116, 92);
+                        ctx.lineTo(116, 0);
+                        ctx.lineTo(118, 0);
+                        ctx.lineTo(118, 92);
+                        ctx.lineTo(120, 92);
+                        ctx.lineTo(120, 0);
+                        ctx.lineTo(122, 0);
+                        ctx.lineTo(122, 92);
+                        ctx.lineTo(124, 92);
+                        ctx.lineTo(124, 0);
+                        ctx.lineTo(126, 0);
+                        ctx.lineTo(126, 92);
+                        ctx.lineTo(128, 92);
+                        ctx.lineTo(128, 0);
+                        ctx.lineTo(130, 0);
+                        ctx.lineTo(130, 92);
+                        ctx.lineTo(132, 92);
+                        ctx.lineTo(132, 0);
+                        ctx.lineTo(134, 0);
+                        ctx.lineTo(134, 92);
+                        ctx.lineTo(136, 92);
+                        ctx.lineTo(136, 0);
+                        ctx.lineTo(138, 0);
+                        ctx.lineTo(138, 92);
+                        ctx.lineTo(140, 92);
+                        ctx.lineTo(140, 0);
+                        ctx.lineTo(142, 0);
+                        ctx.lineTo(142, 92);
+                        ctx.lineTo(144, 92);
+                        ctx.lineTo(144, 0);
+                        ctx.lineTo(146, 0);
+                        ctx.lineTo(146, 92);
+                        ctx.lineTo(148, 92);
+                        ctx.lineTo(148, 0);
+                        ctx.lineTo(150, 0);
+                        ctx.lineTo(150, 92);
+                        ctx.lineTo(152, 92);
+                        ctx.lineTo(152, 0);
+                        ctx.lineTo(154, 0);
+                        ctx.lineTo(154, 92);
+                        ctx.lineTo(156, 92);
+                        ctx.lineTo(156, 0);
+                        ctx.lineTo(158, 0);
+                        ctx.lineTo(158, 92);
+                        ctx.lineTo(160, 92);
+                        ctx.lineTo(160, 0);
+                        ctx.lineTo(162, 0);
+                        ctx.lineTo(162, 92);
+                        ctx.lineTo(164, 92);
+                        ctx.lineTo(164, 0);
+                        ctx.lineTo(166, 0);
+                        ctx.lineTo(166, 92);
+                        ctx.lineTo(168, 92);
+                        ctx.lineTo(168, 0);
+                        ctx.lineTo(170, 0);
+                        ctx.lineTo(170, 92);
+                        ctx.lineTo(172, 92);
+                        ctx.lineTo(172, 0);
+                        ctx.lineTo(174, 0);
+                        ctx.lineTo(174, 92);
+                        ctx.lineTo(176, 92);
+                        ctx.lineTo(176, 0);
+                        ctx.lineTo(178, 0);
+                        ctx.lineTo(178, 92);
+                        ctx.lineTo(180, 92);
+                        ctx.lineTo(180, 0);
+                        ctx.lineTo(182, 0);
+                        ctx.lineTo(182, 92);
+                        ctx.lineTo(184, 92);
+                        ctx.lineTo(184, 0);
+                        ctx.lineTo(186, 0);
+                        ctx.lineTo(186, 92);
+                        ctx.lineTo(188, 92);
+                        ctx.lineTo(188, 0);
+                        ctx.lineTo(190, 0);
+                        ctx.lineTo(190, 92);
+                        ctx.lineTo(192, 92);
+                        ctx.lineTo(192, 0);
+                        ctx.lineTo(194, 0);
+                        ctx.lineTo(194, 92);
+                        ctx.lineTo(196, 92);
+                        ctx.lineTo(196, 0);
+                        ctx.lineTo(198, 0);
+                        ctx.lineTo(198, 92);
+                        ctx.lineTo(200, 92);
+                        ctx.lineTo(200, 0);
+                        ctx.lineTo(202, 0);
+                        ctx.lineTo(202, 92);
+                        ctx.lineTo(204, 92);
+                        ctx.lineTo(204, 0);
+                        ctx.lineTo(206, 0);
+                        ctx.lineTo(206, 92);
+                        ctx.lineTo(208, 92);
+                        ctx.lineTo(208, 0);
+                        ctx.lineTo(210, 0);
+                        ctx.lineTo(210, 92);
+                        ctx.lineTo(212, 92);
+                        ctx.lineTo(212, 0);
+                        ctx.lineTo(214, 0);
+                        ctx.lineTo(214, 92);
+                        ctx.lineTo(216, 92);
+                        ctx.lineTo(216, 0);
+                        ctx.lineTo(218, 0);
+                        ctx.lineTo(218, 92);
+                        ctx.lineTo(220, 92);
+                        ctx.lineTo(220, 0);
+                        ctx.lineTo(222, 0);
+                        ctx.lineTo(222, 92);
+                        ctx.lineTo(224, 92);
+                        ctx.lineTo(224, 0);
+                        ctx.lineTo(226, 0);
+                        ctx.lineTo(226, 92);
+                        ctx.lineTo(228, 92);
+                        ctx.lineTo(228, 0);
+                        ctx.fill();
+
+                        //ガイド用
+                        //					ctx.fillStyle = "#7d7d7d";
+                        //					ctx.lineWidth = 0;
+                        //					ctx.beginPath();
+                        //					ctx.moveTo(14,12);
+                        //					ctx.lineTo(14,12);
+                        //					ctx.lineTo(214,12);
+                        //					ctx.lineTo(214,52);
+                        //					ctx.lineTo(14,52);
+                        //			
+                        //					ctx.lineTo(14,60);
+                        //					ctx.lineTo(214,60);
+                        //					ctx.lineTo(214,80);
+                        //					ctx.lineTo(14,80);
+                        //					ctx.fill();
+
+                        //1文字目
+                        ctx.font = "43px 'Kosugi Maru'";
+                        ctx.fillStyle = "#004fa5";
+                        ctx.textAlign = "center";
+                        var jp_top1 = result_place_jp_top.charAt(0);
+                        if (result_place_jp_top.length === 1) {
+                            ctx.fillText(jp_top1, 114, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 2) {
+                            ctx.fillText(jp_top1, 64, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 3) {
+                            ctx.fillText(jp_top1, 44, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 4) {
+                            ctx.fillText(jp_top1, 36, 48, 110);
+                        }
+
+                        //2文字目
+                        var jp_top2 = result_place_jp_top.charAt(1);
+                        if (result_place_jp_top.length === 2) {
+                            ctx.fillText(jp_top2, 164, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 3) {
+                            ctx.fillText(jp_top2, 114, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 4) {
+                            ctx.fillText(jp_top2, 88, 48, 110);
+                        }
+
+                        //3文字目
+                        var jp_top3 = result_place_jp_top.charAt(2);
+                        if (result_place_jp_top.length === 3) {
+                            ctx.fillText(jp_top3, 184, 48, 110);
+                        }
+                        if (result_place_jp_top.length === 4) {
+                            ctx.fillText(jp_top3, 140, 48, 110);
+                        }
+
+                        //4文字目
+                        var jp_top4 = result_place_jp_top.charAt(3);
+                        if (result_place_jp_top.length === 4) {
+                            ctx.fillText(jp_top4, 192, 48, 110);
+                        }
+
+                        //5文字以上
+                        ctx.font = "43px 'Kosugi Maru'";
+                        ctx.fillStyle = "#004fa5";
+                        ctx.textAlign = "center";
+                        if (result_place_jp_top.length > 4) {
+                            ctx.fillText(result_place_jp_top, 114, 48, 210);
+                        }
+
+                        //英字部分
+                        ctx.font = "26px 'Open Sans'"; //フォントはこれでいきます
+                        ctx.fillText(result_place_en_top, 114, 80, 210);
+                    }, i * 100);
+                })(i);
+            }
+        }
+    </script>
+    <style type="text/css">
+    </style>
+    <style type="text/css">
+        @media print {
+            .TridactylStatusIndicator {
+                display: none !important;
+            }
+        }
+    </style>
+    <script async="false" type="text/javascript" src="files/nostr-provider.js"></script>
+</head>
+
+<body style="scroll-behavior: unset;"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+	<!--
+    <script>
+        __wm.rw(0);
+    </script>
+    <div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+    </div>
+    <div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20240512122336/https://mirakiki.work/chimei.html</div>
+    <script type="text/javascript">
+        //<![CDATA[
+        __wm.bt(725, 27, 25, 2, "web", "https://mirakiki.work/chimei.html", "20240512122336", 1996, "https://web-static.archive.org/_static/", ["https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt", "https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+        __wm.rw(1);
+        //]]>
+    </script>
+	-->
+    <!-- END WAYBACK TOOLBAR INSERT -->
+
+    <header class="page-header wrapper">
+        <div class="logo-d"><a href="index.html"><img class="logo" src="files/flex-logo2.svg" alt="Home"></a></div>
+		<!--
+        <nav>
+            <ul class="main-nav">
+                <li><a href="https://web.archive.org/web/20240512122336/https://mirakiki.work/railsim-plug-in/">RailSim</a></li>
+                <li><a href="https://web.archive.org/web/20240512122336/https://note.com/chiwari">Note</a></li>
+                <li><a href="https://web.archive.org/web/20240512122336/https://mirakiki.work/link/">Link</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+		-->
+    </header>
+    <div class="home-content wrapper">
+        <h2 class="plugin-title">地名板ジェネレーター</h2>
+        <div>
+            <p style="margin: 1.5rem 0px">RailSimプラグイン用のテクスチャ制作時の副産物。お好きな交差点名を作れます。ただし、枠は表示されません。</p>
+            <p style="margin: 1.5rem 0px">5文字以上になると長体がかかります。4文字までの場合は実際の標識のように均等に割り付けされます。</p>
+            <h3 style="margin-top:40px;">お好きな地名を入力してください</h3>
+            <p style="margin: 1.5rem 0px">上段に大きく表示される日本語の地名と、下段に小さく表示される英語の地名を入力してください。</p>
+            <p style="margin: 1.5rem 0px">入力し終わったら「反映」のボタンを押してください。フォントが変わらない場合はボタンを再度押してください。</p>
+            <table class="plugin-table">
+                <tbody>
+                    <tr>
+                        <td class="plugin-table-name">日本語<input type="text" id="place_jp_top" value="市役所前" style="width:200px; height:30px; font-size:1.2rem; margin-left:15px; padding-left:5px"></td>
+                    </tr>
+                    <tr>
+                        <td class="plugin-table-name">英　語<input type="text" id="place_en_top" class="chimei_jp" value="City Office" style="width:200px; height:30px; font-size:1.2rem; margin-left:15px; padding-left:5px"></td>
+                    </tr>
+                    <tr>
+                        <td class="plugin-table-name" style="border-left: solid 0px #ffffff; text-align:right"><input type="button" value="反映" onclick="getValue()" class="table-button" style="font-size:1.1rem"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top:40px;">ボタンを押すと、下に出力されます</h3>
+            <div style="height:160px; margin:auto 30px auto 30px; background-color:#e7e7e7; position: relative">
+                <div style="margin:auto; width:228px; height:92px; position:absolute; top:0; bottom:0; left:0; right:0">
+                    <canvas id="canvas" width="228px" height="92px"></canvas>
+                </div>
+            </div>
+            <table class="plugin-table">
+                <tbody>
+                    <tr>
+                        <td class="plugin-table-name" style="border-left: solid 0px #ffffff; text-align:right">
+                            <button onclick="writeFile()" style="font-size:1.1rem" class="table-button">画像を保存する</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top:40px;">ご注意</h3>
+            <p style="margin: 1.5rem 0px">字体はフリーのWebフォントで実物の「ナール」「Helvetica」ではありません。</p>
+            <p style="margin: 1.5rem 0px">生成画像の使用に制限は設けておりませんが、使用による如何なる損害についても責任は負いかねます。まあ、期間限定公開なので。</p>
+        </div>
+    </div>
+    <footer class="page-footer wrapper">
+		<!--
+        <div class="back"><a href="https://web.archive.org/web/20240512122336/https://mirakiki.work/index.html">Back</a></div>
+		-->
+        <div class="copyright">Copyright © 2009-2024 Mirakiki All rights reserved.</div>
+    </footer>
+
+
+
+    <span class="cleanslate TridactylStatusIndicator TridactylModenormal">normal</span>
+</body>
+
+</html>
